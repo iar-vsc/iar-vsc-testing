@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Guide &mdash; IAR-VSC 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Welcome to IAR-VSC’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> IAR-VSC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring">Configuring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building">Building</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deprecated-method-create-manually">Deprecated Method: Create manually</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging">Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extension-settings">Extension Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#advanced-usage">Advanced usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IAR-VSC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>User Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pages/user_guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the <code class="docutils literal notranslate"><span class="pre">IAR-vsc</span></code> user guide!</p>
+<p>This guide will take you through all the features the <code class="docutils literal notranslate"><span class="pre">IAR-vsc</span></code> plugin provides to enhance your workflow with <code class="docutils literal notranslate"><span class="pre">IAR</span></code> using the power of Visual Studio Code.
+If you just want to get going, take a look at the Quickstart below.</p>
+<div class="section" id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Configure the following items:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">IAR:</span> <span class="pre">Select</span> <span class="pre">Workbench</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">IAR:</span> <span class="pre">Select</span> <span class="pre">Compiler</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">IAR:</span> <span class="pre">Select</span> <span class="pre">Project</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">IAR:</span> <span class="pre">Select</span> <span class="pre">Configuration</span></code></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Configure an <code class="docutils literal notranslate"><span class="pre">IAR</span> <span class="pre">-</span> <span class="pre">build</span></code> task using <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Configure</span> <span class="pre">Task</span></code></p>
+</li>
+<li><p class="first">Build your project</p>
+</li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">IAR-vsc</span></code> can be installed simply through the extension marketplace from Visual Studio Code.</p>
+<div class="section" id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>This extensions presumes that you installed the <code class="docutils literal notranslate"><span class="pre">cpptools</span></code> plugin by  <em>Microsoft</em>. Also a working <code class="docutils literal notranslate"><span class="pre">IAR</span></code> installation is needed.</p>
+</div>
+</div>
+<div class="section" id="configuring">
+<h2>Configuring<a class="headerlink" href="#configuring" title="Permalink to this headline">¶</a></h2>
+<p>It is adviced to use the extension UI to configure the extension. The UI are statusbar items which will execute a command when clicking on them.</p>
+<img alt="https://raw.githubusercontent.com/pluyckx/iar-vsc/master/Extension/images/readme/statusbar.png" src="https://raw.githubusercontent.com/pluyckx/iar-vsc/master/Extension/images/readme/statusbar.png" />
+<p>You can also call the commands behind those buttons, see the <code class="docutils literal notranslate"><span class="pre">contribution</span></code> tab in the extension section of VS Code.</p>
+<p>To configure your project, configure the following options:</p>
+<ul class="simple">
+<li>IAR workbench installation</li>
+<li>Compiler</li>
+<li>Project (ewp file)</li>
+<li>Configuration</li>
+</ul>
+</div>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<p>When you execute the VSCode command <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Configure</span> <span class="pre">Task</span></code> two items are added which are generated by this extension:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">iar:</span> <span class="pre">IAR</span> <span class="pre">Build</span> <span class="pre">-</span> <span class="pre">template</span> <span class="pre">using</span> <span class="pre">selected</span> <span class="pre">workbench,</span> <span class="pre">project</span> <span class="pre">and</span> <span class="pre">config</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">iar:</span> <span class="pre">IAR</span> <span class="pre">Rebuild</span> <span class="pre">-</span> <span class="pre">template</span> <span class="pre">using</span> <span class="pre">selected</span> <span class="pre">workbench,</span> <span class="pre">project</span> <span class="pre">and</span> <span class="pre">config</span></code></li>
+</ul>
+<p>When selecting one of the two, a default task is generated which uses the workbench, project and configuration selected using the UI. When you select a different configuration, project or workbench, this script will use the newly selected items.</p>
+<div class="section" id="deprecated-method-create-manually">
+<h3>Deprecated Method: Create manually<a class="headerlink" href="#deprecated-method-create-manually" title="Permalink to this headline">¶</a></h3>
+<p>In previous plugins there was a build command. However, from now on you can create a task because all necessary information is available through settings. You can use the following snippets to create a <code class="docutils literal notranslate"><span class="pre">build</span></code> and <code class="docutils literal notranslate"><span class="pre">rebuild</span></code> command. In alpha2 or beta1 will contain a <code class="docutils literal notranslate"><span class="pre">problem</span> <span class="pre">matcher</span></code>. Use the following template as a starting point:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.0.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;tasks&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;IAR Build&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;process&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;${config:iarvsc.workbench}\\common\\bin\\IarBuild.exe&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;${config:iarvsc.ewp}&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-make&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;${config:iarvsc.configuration}&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$iar-cc&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$iar-linker&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;isDefault&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;IAR Rebuild&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;process&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;${config:iarvsc.workbench}\\common\\bin\\IarBuild.exe&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;${config:iarvsc.ewp}&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;${config:iarvsc.configuration}&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$iar-cc&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$iar-linker&quot;</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="debugging">
+<h2>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h2>
+<p>In v1.1.0 settings are added to configure a gdbserver and a gdb executable. The following data for
+the <cite>launch.json</cite> file will use this configuration to start debugging. Currently this is only for
+testing and is work in progress. The settings are nog yet automatically updated when selecting
+different projects or confiugrations (even though the description of the settings mention this).</p>
+<p>Open or create the <code class="docutils literal notranslate"><span class="pre">launch.json</span></code> file and place your cursor at the beginning of the configurations
+array. Now press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Space</span></code> to activate autocompletion. You should see an item like
+<code class="docutils literal notranslate"><span class="pre">IAR:</span> <span class="pre">Debug</span> <span class="pre">using</span> <span class="pre">gdb</span> <span class="pre">server</span></code>. If you select this, the configuration below is automatically
+generated.</p>
+<p>Some information about the used config parameters:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.debugger</span></code>: The path to the debugger to use. In case your debugger is on your <code class="docutils literal notranslate"><span class="pre">PATH</span></code>
+environment you can just enter the debugger executable like <code class="docutils literal notranslate"><span class="pre">arm-none-eabi-gdb.exe</span></code>, otherwise,
+use the absolute path to the debugger.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.gdbServer</span></code>: The path to the gdb server. If you are using a J-Link Segger, you will
+probably have to enter the full path like: <code class="docutils literal notranslate"><span class="pre">C:\GNU</span> <span class="pre">Tools</span> <span class="pre">ARM</span> <span class="pre">Embedded\2018-q4-major\bin\arm-none-eabi-gdb.exe</span></code>.
+Keep in mind you have to escape the <em>backslashes</em> <code class="docutils literal notranslate"><span class="pre">\</span></code> in <em>json</em>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.device</span></code>: The device you are want to <em>flash</em> and <em>debug</em>. Check your <em>debug server</em>
+documentation which values you can use here.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.outFile</span></code>: This field is not yet used in the current release, but it is mentioned here for
+completeness. You can use it, but keep in  mind the value you enter here can conflict in future
+releases.</li>
+</ul>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;configurations&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Debug GDBServer&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;cppdbg&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;request&quot;</span><span class="p">:</span> <span class="s2">&quot;launch&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;program&quot;</span><span class="p">:</span> <span class="s2">&quot;Path to the out file&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;stopAtEntry&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;cwd&quot;</span><span class="p">:</span> <span class="s2">&quot;${workspaceFolder}&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;externalConsole&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;MIMode&quot;</span><span class="p">:</span> <span class="s2">&quot;gdb&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;miDebuggerPath&quot;</span><span class="p">:</span> <span class="s2">&quot;${config:iarvsc.debugger}&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;debugServerPath&quot;</span><span class="p">:</span> <span class="s2">&quot;${config:iarvsc.gdbServer}&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;debugServerArgs&quot;</span><span class="p">:</span> <span class="s2">&quot;-if swd -singlerun -strict -endian little -speed auto -port 3333 -device ${config:iarvsc.device} -vd -strict -halt&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;serverStarted&quot;</span><span class="p">:</span> <span class="s2">&quot;Connected\\ to\\ target&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;serverLaunchTimeout&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+            <span class="nt">&quot;filterStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nt">&quot;filterStdout&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;setupCommands&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;target remote localhost:3333&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;monitor flash breakpoints = 1&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;monitor flash download = 1&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;monitor reset&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;load \\\&quot;Path to the out file\\\&quot;&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;monitor reset&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="extension-settings">
+<h2>Extension Settings<a class="headerlink" href="#extension-settings" title="Permalink to this headline">¶</a></h2>
+<p>This extension contributes the following settings:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.iarInstallDirectories</span></code>: The rootfolders where all IAR workbenches are installed. By default this is <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files</span> <span class="pre">(x86)\Iar</span> <span class="pre">Systems</span></code>. The default settings contain also the non-x86 folder in case IAR will move to 64-bit installations.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.workbench</span></code>: The last selected workbench in this workspace.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.compiler</span></code>: The last selected compiler.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.ewp</span></code>: The last selected project file.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.configuration</span></code>: The last selected configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">iarvsc.defines</span></code>: Some custom defines you can add to the define list. They folow the <code class="docutils literal notranslate"><span class="pre">identifier=value</span></code> structure. This list will contain all intrinsic compiler functions that are known by the author of this extension. If some are missing, create a GitHub issue.</li>
+</ul>
+<p>An important note for the settings <code class="docutils literal notranslate"><span class="pre">iarvsc.workbench</span></code>, <code class="docutils literal notranslate"><span class="pre">iarvsc.compiler</span></code>, <code class="docutils literal notranslate"><span class="pre">iarvsc.ewp</span></code>, <code class="docutils literal notranslate"><span class="pre">iarvsc.configuration</span></code>:
+Those values get overwritten by the extension when invalid values are defined or you select different values using the extension UI (the status bar items) or commands.</p>
+<div class="section" id="advanced-usage">
+<h3>Advanced usage<a class="headerlink" href="#advanced-usage" title="Permalink to this headline">¶</a></h3>
+<p>Using the settings it is possible to automate other IAR tasks. You can for instance automate flashing the device or running tests in the simulator using the generated cspy scripts. These scripts are available in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> folder present in the same folder as you <code class="docutils literal notranslate"><span class="pre">.ewp</span></code> file.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to IAR-VSC’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Philip Luyckx
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

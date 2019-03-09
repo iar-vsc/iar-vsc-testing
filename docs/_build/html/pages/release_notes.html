@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Release Notes &mdash; IAR-VSC 1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Contributing" href="contributing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> IAR-VSC
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">1.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.0.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.0.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.0.1</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">IAR-VSC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Release Notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pages/release_notes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>1.1.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Implement #28: Add support to generate build tasks using the VSCode built-in command <code class="docutils literal notranslate"><span class="pre">Tasks:</span> <span class="pre">Configure</span> <span class="pre">Task</span></code>.</li>
+<li>Fix #18: Save all files before build. (this is actually fixed because we are now using tasks)</li>
+<li>Add settings to test a generic launch script to start debugging.</li>
+<li>Implement #10: Create a launch task to start debugging using the Segger J-Link debugger using.
+settings configurations parameters.</li>
+<li>Fix #44: Perform a recursive search to find eww files in the workspace root folder.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>1.0.0<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Add __root to default defines</li>
+<li>Add keywords so the extension is easier to find in the marketplace</li>
+<li>Add listeners to the define settings so the cpptools config file is generated when changed</li>
+<li>Fix issue when cpptools config file is empty or invalid: plugin would not load</li>
+<li>Add some more settings for default c and c++ standard configuration</li>
+<li>Correct relative include paths in cpptools config file</li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">=</span></code> sign to default defines in settings</li>
+<li>Add a problem matcher</li>
+<li>Redisgned the extension</li>
+<li>Instead of completely command drive, status bar items are added to configure most things</li>
+<li>Automatically monitor the selected ewp file and auto generate the config file</li>
+<li>Only generate one config file <code class="docutils literal notranslate"><span class="pre">IAR</span></code> in the <code class="docutils literal notranslate"><span class="pre">c_cpp_properties.json</span></code> file. Changing between projects/configurations will
+automatically trigger an update of the <code class="docutils literal notranslate"><span class="pre">IAR</span></code> config section in the json file.</li>
+<li>Move all settings from iar-vsc.json to the configuration file of vscode. This way configurations are reusable.</li>
+<li>Make extension platform aware so you can choose from all compilers from the selected workbench.</li>
+<li>Add new setting to define your own <code class="docutils literal notranslate"><span class="pre">defines</span></code> through the IAR settings. This way it is possible to define the intrinsics
+of your compiler so you do not have to wait for extension updates.</li>
+<li>Add command to open IAR workbench. For now only the workbench opens without a workspace. See Issue #24 &#64; GitHub.</li>
+<li>Extension is now loaded when the workspace contains <code class="docutils literal notranslate"><span class="pre">.ewp</span></code> files.</li>
+<li>Added basic unit- and integrationtests.</li>
+<li>Probably a lot more…</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>0.0.3<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fixes #1: Extension did not detect end of build command</li>
+<li>Fixes #3: Renamed iar-vsc.js to iar-vsc.json</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>0.0.2<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Add system include paths</p>
+</div>
+<div class="section" id="id5">
+<h2>0.0.1<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Initial release of iar-vsc</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="contributing.html" class="btn btn-neutral float-left" title="Contributing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Philip Luyckx
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
